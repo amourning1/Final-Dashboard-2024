@@ -128,10 +128,6 @@ abq_sf$cluster_label <- as.factor(abq_sf$cluster_label)
 
 # Save the prepared data as GeoJSON
 
-# New file path to save the processed data
-new_folder_path <- "C:/Dashboard/"
-dir.create(new_folder_path, recursive = TRUE)
-
 # Save the processed data
 geojson_write(abq_sf, file = paste0(new_folder_path, "processed_abq_mhv_change.geojson"), geometry = "polygon")
 
